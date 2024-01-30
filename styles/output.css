@@ -39,6 +39,7 @@ button {
   max-height: 40px;
   max-width: 150px;
   background-color: #202020;
+  color: #bbb;
   border: 1px solid #bbb;
 }
 
