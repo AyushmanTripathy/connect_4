@@ -1,0 +1,86 @@
+@import "./mixins.scss";
+
+main {
+  @include absolute;
+  @include fullscreen;
+  @include flex(column);
+  @include flex-center;
+  @include poor-story;
+
+  background-color: $pri;
+}
+
+span {
+  font-size: 1rem;
+}
+
+h1 {
+  text-align: center;
+  line-height: 0.5;
+  font-size: 4rem;  
+}
+
+a {
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+button {
+  @include section(5vh, 70vw);
+  @include poor-story;
+
+  max-height: 40px;
+  max-width: 150px;
+  background-color: $pri;
+
+  border: 1px solid $light;
+}
+
+.container {
+  @include grid(repeat(6, 1fr), repeat(6, 1fr));
+  @include shadow;
+
+  height: 60vh;
+  aspect-ratio: 1;
+  max-height: 90vw;
+
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: $sec;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+div {
+  @include shadow;
+  border-radius: 50%;
+  background-color: $tri;
+  border:1px solid $light;
+}
+
+@keyframes change-color-red {
+  0% {
+    background-color: $tri;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+.red {
+  animation: change-color-red 2s forwards;
+}
+
+@keyframes change-color-yellow {
+  0% {
+    background-color: $tri;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+
+.yellow {
+  animation: change-color-yellow 2s forwards;
+}

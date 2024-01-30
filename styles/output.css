@@ -1,0 +1,91 @@
+main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poor Story", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #202020;
+}
+
+span {
+  font-size: 1rem;
+}
+
+h1 {
+  text-align: center;
+  line-height: 0.5;
+  font-size: 4rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+button {
+  height: 5vh;
+  width: 70vw;
+  font-family: "Poor Story", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  max-height: 40px;
+  max-width: 150px;
+  background-color: #202020;
+  border: 1px solid #bbb;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+  height: 60vh;
+  aspect-ratio: 1;
+  max-height: 90vw;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #303030;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+div {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  background-color: #404040;
+  border: 1px solid #bbb;
+}
+
+@keyframes change-color-red {
+  0% {
+    background-color: #404040;
+  }
+  100% {
+    background-color: red;
+  }
+}
+.red {
+  animation: change-color-red 2s forwards;
+}
+
+@keyframes change-color-yellow {
+  0% {
+    background-color: #404040;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+.yellow {
+  animation: change-color-yellow 2s forwards;
+}
+
+/*# sourceMappingURL=output.css.map */
